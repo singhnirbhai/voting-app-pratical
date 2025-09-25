@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Voting Website</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Vote for Your Favorite Tool</h1>
+    <p class="subtitle">One person, one vote. Choose wisely!</p>
+
+    <div class="candidates">
+      
+      <div class="card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/devops/devops-original.svg" alt="DevOps" width="96"
+          height="96">
+        <h3>DevOps</h3>
+        <button onclick="vote('DevOps')" id="btnDevOps">Vote</button>
+      </div>
+
+
+      <div class="card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" alt="Kubernetes">
+        <h3>Kubernetes</h3>
+        <button onclick="vote('Kubernetes')" id="btnKubernetes">Vote</button>
+      </div>
+
+      <div class="card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ansible/ansible-original.svg" alt="Ansible">
+        <h3>Ansible</h3>
+        <button onclick="vote('Ansible')" id="btnAnsible">Vote</button>
+      </div>
+
+      <div class="card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker">
+        <h3>Docker</h3>
+        <button onclick="vote('Docker')" id="btnDocker">Vote</button>
+      </div>
+
+      <div class="card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux">
+        <h3>Linux</h3>
+        <button onclick="vote('Linux')" id="btnLinux">Vote</button>
+      </div>
+
+      <div class="card">
+        <img src="https://img.icons8.com/color/96/cloud.png" alt="Cloud">
+        <h3>Cloud</h3>
+        <button onclick="vote('Cloud')" id="btnCloud">Vote</button>
+      </div>
+
+      <div class="card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg" alt="Jenkins">
+        <h3>Jenkins</h3>
+        <button onclick="vote('Jenkins')" id="btnJenkins">Vote</button>
+      </div>
+
+      <div class="card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg" alt="Terraform">
+        <h3>Terraform</h3>
+        <button onclick="vote('Terraform')" id="btnTerraform">Vote</button>
+      </div>
+
+
+      <div class="card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redhat/redhat-original.svg" alt="OpenShift">
+        <h3>OpenShift</h3>
+        <button onclick="vote('OpenShift')" id="btnOpenShift">Vote</button>
+      </div>
+    </div>
+
+    <div class="results">
+      <h2>Voting Results</h2>
+      <p id="DevOps">DevOps: 0 votes</p>
+      <p id="Kubernetes">Kubernetes: 0 votes</p>
+      <p id="Ansible">Ansible: 0 votes</p>
+      <p id="Docker">Docker: 0 votes</p>
+      <p id="Linux">Linux: 0 votes</p>
+      <p id="Cloud">Cloud: 0 votes</p>
+      <p id="Jenkins">Jenkins: 0 votes</p>
+      <p id="Terraform">Terraform: 0 votes</p>
+      <p id="OpenShift">OpenShift: 0 votes</p>
+    </div>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+
+</html>
